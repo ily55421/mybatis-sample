@@ -34,11 +34,9 @@ public class XMLConfigBuilder {
             throw new ParseException("数据解析异常");
         }
         Element root = doc.getRootElement();
-        Element property = root.element("property").getParent();
-        List<Element> elements = null;
-        if ("dataSource".equals(property.getQName().getName())) {
-            elements = property.elements();
-        }
+        Element property = root.element("dataSource");
+        List<Element> elements = property.elements();
+
         // 解析配置信息
         Properties p = new Properties();
         for (Element element : elements) {

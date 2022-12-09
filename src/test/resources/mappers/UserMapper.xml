@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<mapper namespace="com.link.mybatis.exec.UserMapper">
-    <insert id="insert" parameterType="com.link.mybatis.exec.User">
-        insert into user(account,password) values(#{user},#{password})
-    </insert>
-    <select id="getAll" resultType="com.link.mybatis.exec.User">
-        select * from user
-    </select>
-</mapper>

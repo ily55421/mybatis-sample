@@ -1,0 +1,10 @@
+
+link:
+  mybatis:
+    url: jdbc:mysql:///mybatis
+    driver: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+    config:
+      mapper-locations:
+        - mappers/UserMapper.xml

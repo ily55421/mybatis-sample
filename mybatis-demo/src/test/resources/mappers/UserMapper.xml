@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mapper namespace="exec.UserMapper">
+    <insert id="insert" parameterType="exec.User">
+        insert into user(account,password) values(#{user},#{password})
+    </insert>
+    <select id="getAll" resultType="exec.User">
+        select * from user
+    </select>
+</mapper>

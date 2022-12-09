@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mapper namespace="com.link.mapper.UserMapper">
+    <insert id="insert" parameterType="com.link.entity.User">
+        insert into user(username,password) values(#{account},#{password})
+    </insert>
+    <select id="getAll" resultType="com.link.entity.User">
+        select * from user
+    </select>
+</mapper>
